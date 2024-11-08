@@ -43,6 +43,7 @@ body, html {
     top: 60px;
     background-image: url(assets/img/white_lotus.png);
     z-index: 2;
+    cursor: pointer;
 }
 
 #red{
@@ -52,6 +53,7 @@ body, html {
     top: 60px;
     background-image: url(assets/img/red_jaguar.png);
     z-index: 3;
+    cursor: pointer;
 }
 
 .text{
