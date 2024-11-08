@@ -31,3 +31,5 @@ redDot.addEventListener("click", redClick = () => {
     displayButtons();
 });
 redCar.addEventListener("click", redClick);
+
+reset.addEventListener("click", () => location.reload());
