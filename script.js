@@ -94,6 +94,9 @@ redDot.addEventListener("click", redClick);
 redCar.addEventListener("click", redClick);
 
 reset.addEventListener("click", () => location.reload());
+document.addEventListener("keydown", (e) => {
+    if (e.key == "r") location.reload();
+})
 
 accelerate.addEventListener("click", Accelerate = () => {
     handleSize();
