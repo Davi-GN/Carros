@@ -99,16 +99,20 @@ document.addEventListener("keydown", (e) => {
 })
 
 accelerate.addEventListener("click", Accelerate = () => {
-    handleSize();
-    handlePosition();
+    if (posY > 10) {
+        handleSize();
+        handlePosition();
+    }
 });
 document.addEventListener("keydown", (e) => {
     if (e.key == "w") Accelerate();
 });
 
 slow.addEventListener("click", Slow =  () => {
-    handleSize("decrease");
-    handlePosition("decrease");
+    if (posY < 80) {
+        handleSize("decrease");
+        handlePosition("decrease");
+    }
 });
 document.addEventListener("keydown", (e) => {
     if (e.key == "s") Slow();
